@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving School - Learn to Drive with Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <!-- Mobile Menu Button -->
+  <button class="menu-btn"><i class="fas fa-bars"></i></button>
+
+  <!-- Menu Overlay -->
+  <div class="menu-overlay"></div>
+
+  <!-- Sidebar Menu -->
+  <nav class="menu">
+    <div class="menu-header">Menu</div>
+    <ul class="menu-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Explore Services</a></li>
+      <li><a href="#contact-form">Contact</a></li>
+      <li><a href="#cars">Our Cars</a></li>
+      <li><a href="#about">Our Information</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#chairman">About our Chairman</a></li>
+      <li><a href="#rating">Rating</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home" class="hero-section text-center text-white">
+    <div class="container">
+      <h1 style="color: antiquewhite;">Welcome to New Popular Services</h1>
+      <p>Your Journey to Safe and Confident Driving Starts in Popular Driving School</p>
+      <div class="action-buttons">
+        <a href="#services" class="btn btn-primary btn-lg">Explore Services</a><p></p>
+       <a href="#contact-form" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section py-5 text-center">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        Popular Driving School, we have trained over 70,000 confident drivers since our inception. With certified instructors and state-of-the-art vehicles, 
+        we aim to make your driving experience safe and enjoyable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section py-5 text-center">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+         <a  href="#contact-form"> 
+          <div class="service-card">
+            <i class="fas fa-car fa-3x text-primary"></i>
+            <h3>Driving Lessons</h3>
+            <p>Learn to drive with certified instructors in both manual and automatic vehicles.</p>
+          </div>
+         </a>
+        </div>
+        <div class="col-md-4">
+          <a  href="#contact-form"> 
+          <div class="service-card">
+            <i class="fas fa-id-card fa-3x text-primary"></i>
+            <h3>License Assistance</h3>
+            <p>We help you get your learner's, permanent, or international license hassle-free.</p>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a  href="#contact-form"> 
+          <div class="service-card">
+            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+            <h3>Vehicle Insurance</h3>
+            <p>Secure your vehicle with the best insurance packages available.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="my-5">
+<!-- Cars Available Section -->
+<section id="cars" class="cars-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Cars Available</h2>
+    <div class="row mt-4">
+      <!-- Car 1 -->
+      <div class="col-md-6 text-center">
+        <img src="images/swift-transparent.png" alt="Maruti Suzuki Swift" class="img-fluid" style="max-height: 300px;">
+        <h3>Maruti Suzuki Swift (Manual)</h3>
+        <p>A compact and stylish hatchback perfect for learners and experienced drivers alike.</p>
+      </div>
+      <!-- Car 2 -->
+      <div class="col-md-6 text-center">
+        <img src="images/celerio-transparent.png" alt="Maruti Suzuki Celerio" class="img-fluid" style="max-height: 300px;">
+        <h3>Maruti Suzuki Celerio (Auto)</h3>
+        <p>A fuel-efficient and comfortable car designed for smooth driving lessons.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="my-5">
+
+ <!-- Contact Form Section -->
+<section id="contact-form" class="form-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Get in Touch</h2>
+    <form action="https://formsubmit.co/sulaimaansong6297@gmail.com" method="POST" class="mt-4">
+      <div class="row mb-3">
+        <div class="mb-4">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your Full Name" required>
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email Address" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="choices" class="form-label">Choices</label>
+        <select id="choices" name="choices" class="form-control" required>
+          <option value="">-- Select a Service --</option>
+          <option value="Driving Lessons">Driving Lessons</option>
+          <option value="License Assistance">License Assistance</option>
+          <option value="Vehicle Insurance">Vehicle Insurance</option>
+          <option value="HSRP Number Plate">HSRP Number Plate</option>
+          <option value="Property Sale & Purchase">Property Sale & Purchase</option>
+          <option value="Voter ID Services">Voter ID Services</option>
+          <option value="Health Insurance">Health Insurance</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="file" class="form-label">Upload an Image</label>
+        <input type="file" id="file" name="file" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+
+    <!-- Horizontal Line -->
+    <hr class="my-5">
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+      <h2 class="section-title text-center">Our Contact Information</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><strong>Chairman :</strong> Zakir Khan</li>
+            <li><strong>Phone no.:</strong> <a href="tel:+6363234155"> 6363234155</a></li>
+            <li><strong>Office Phone no.:</strong> <a href="tel:+7975659196"> 7975659196</a></li>
+            <li><strong>Email :</strong> <a href="mailto:zakirkhanoffice@gmail.com"> zakirkhanoffice@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><strong>Address:</strong></li>
+            <li>#599, CBI Road,</li>
+            <li>Opp to St. Judges Church,</li>
+            <li>HMT Layout, RT Nagar,</li>
+            <li>Bangalore - 560032</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+s<hr class="my-5">
+<!-- Location Section -->
+<section id="location" class="location-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Our Location</h2>
+    <p class="text-center">
+      Visit us at our office location:
+    </p>
+    <div class="map-container mt-4 text-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.139820397498!2d77.58932367412126!3d13.026766813668305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17b976117683%3A0xb0702f43d5c16e82!2sPopular%20Motors%20Driving%20School!5e0!3m2!1sen!2sin!4v1733494268556!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+<hr class="my-5">
+
+<!-- About Chairman Section -->
+<section id="chairman" class="about-chairman">
+  <div class="container">
+    <h2>About Our Chairman</h2>
+    <img src="./images/WhatsApp Image 2024-11-21 at 8.00.49 PM(1).jpeg" alt="Chairman Image">
+    <p>
+      Meet Mr. Zakir Khan R, the visionary leader behind our success. With over 29 years of experience in the driving education industry, Mr. Zakir has been instrumental in shaping our organization's mission to provide the best driving education for everyone. His dedication to safety and excellence inspires us every day.
+    </p>
+  </div>
+</section>
+<hr class="my-5">
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center">What Our Students Say</h2>
+    <div class="row mt-4">
+      <div class="col-md-4 text-center">
+        <blockquote>
+          <p>"The instructors at Popular Driving School are incredibly patient and knowledgeable. Highly recommended!"</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+        </blockquote>
+      </div>
+      <div class="col-md-4 text-center">
+        <blockquote>
+          <p>"Getting my license was a breeze thanks to their expert guidance. Top-notch services!"</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+        </blockquote>
+      </div>
+      <div class="col-md-4 text-center">
+        <blockquote>
+          <p>"I learned driving in just two weeks. The staff was very friendly and professional."</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="my-5">
+
+<!-- Rating Section -->
+<section id="rating" class="rating-section py-5 bg-primary text-white">
+  <div class="container text-center">
+    <h2 class="section-title">Rate Us</h2>
+    <p>We value your feedback. Let us know how we did!</p>
+    <form action="https://formsubmit.co/sulaimaansong6297@gmail.com" method="POST" class="rating-form mt-4">
+      <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" required>
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4" required>
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3" required>
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2" required>
+        <label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" required>
+        <label for="star1">★</label>
+      </fieldset>
+      <button type="submit" class="btn btn-primary btn-lg">Submit Rating</button>
+    </form>
+  </div>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>

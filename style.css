@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF; /* White */
+  color: #333333; /* Dark Text */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, .section-title {
+  color: #3498DB; /* Light Blue */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+a, a:hover {
+  color: #1A5276; /* Dark Blue */
+  text-decoration: none;
+}
+
+/* Header */
+.hero-section {
+  background-color: #3498DB; /* Light Blue */
+  color: #FFFFFF; /* White */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-section .btn-primary {
+  background-color: #1A5276; /* Dark Blue */
+  border: 1px solid #1A5276;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #5DADE2; /* Sky Blue */
+  border-color: #5DADE2;
+}
+
+ /* Mobile Menu */
+ .menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: #ffff;
+  background-color:  #3498DB;
+  border: none;
+  padding: 7px;
+  font-size: 1.5rem;
+  border-radius: 20%;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 1000;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  z-index: 1002;
+  padding: 20px;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list li {
+  margin-bottom: 15px;
+}
+
+.menu-list li a {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.menu-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* Cards (e.g., Services, Testimonials) */
+.service-card, .testimonial-card {
+  background-color: #F4F6F7; /* Light Gray */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.service-card:hover, .testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3, .testimonial-card h3 {
+  color: #1A5276; /* Dark Blue */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1A5276; /* Dark Blue */
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3498DB; /* Light Blue */
+  color: #FFFFFF;
+}
+
+/* Forms */
+input, select, textarea {
+  background-color: #FFFFFF; /* White */
+  border: 1px solid #D0D0D0; /* Light Gray */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498DB; /* Light Blue */
+  box-shadow: 0 0 5px #3498DB;
+  outline: none;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background-color: #F4F6F7; /* Light Gray */
+  color: #333333; /* Dark Gray */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.testimonial-card .stars {
+  color: #F1C40F; /* Yellow for star ratings */
+  margin-top: 10px;
+}
+
+/* Location Section */
+.location-section {
+  background-color: #FFFFFF; /* White */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.location-section iframe {
+  border: 0;
+  width: 100%;
+  height: 400px;
+}
+
+/* Contact Info */
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info li {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 10px;
+}
+
+/* Rating Section */
+.rating {
+  direction: rtl; /* To arrange stars in left to right order */
+  font-size: 2rem; /* Size of stars */
+}
+
+.rating input[type="radio"] {
+  display: none; /* Hide radio buttons */
+}
+
+.rating label {
+  color: #ccc; /* Gray color for unselected stars */
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.rating input[type="radio"]:checked ~ label {
+  color: #F1C40F; /* Gold color when star is selected */
+}
+
+.rating label:hover, .rating label:hover ~ label {
+  color: #F1C40F; /* Highlight stars on hover */
+}
+
+.rating input[type="radio"]:checked + label {
+  color: #F1C40F; /* Keep color for checked stars */
+}
+
+/* Styling the submit button */
+.rating-form button {
+  background-color: #3498DB; /* Light Blue */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.rating-form button:hover {
+  background-color: #2980B9; /* Darker Blue */
+}
+
+ /* About Chairman Section */
+ .about-chairman {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+.about-chairman h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-chairman img {
+  max-width: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.about-chairman p {
+  font-size: 1.1rem;
+  color: #555;
+}
